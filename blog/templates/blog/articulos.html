@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ola's blog</title>
+    </head>
+    <body>
+    	<div>
+    		<h1><a href="#">Django Girls Cali</a></h1>
+    	</div>
+    	<div>
+    		<section>
+    			{% for post in list_article %}
+    			<article>
+    				<h2>{{ post.title }}</h2>
+    				<p>{{post.text}}</p>
+    				<time>{{post.created_date}}</time>
+    			</article>
+    			{% endfor %}
+    		</section>
+    	</div>
+    </body>
+</html>
